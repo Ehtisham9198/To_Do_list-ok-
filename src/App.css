@@ -1,38 +1,52 @@
-.App {
+.to {
   text-align: center;
+  font-family: Verdan;
+  color: rgb(153, 135, 169);
+  
+}
+.button{
+  cursor: pointer;
+  border-radius: 5px;
+  border-color: rgb(234, 189, 189);
+  border-style: solid;
+  background-color: rgb(35, 35, 180);
+  color:antiquewhite;
+  height: 30px;
+
+}
+body{
+  background-color: rgb(96, 96, 96);
+}
+.to-do{
+  color: rgb(247, 246, 247);
+  font-size: 1.5cm;
+  
+}
+.ink{
+  border-radius: 10px rgb(221, 80, 80);
+  border-style: solid;
+   background-color: antiquewhite;
+   color: black;
+   height: 30px;
+   width: 200px;
+
+}
+.curlist{
+  background-color: blue;
+  font-weight: bold;
+  color: antiquewhite;
+  margin-top: 5px;
+  margin-left:25%;
+  margin-right:26%;
+  line-height: 35px;
+  padding: 2px 2px 2px 2px;
+  
+}
+.Delbut{
+  background-color: brown;
+  color: rgb(225, 232, 232);
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
