@@ -14,7 +14,7 @@ function App() {
     e.preventDefault();
     SetList((prevList) => [...prevList, val]);
     limi_changer('');
-    
+
      
      }
 
@@ -39,7 +39,7 @@ function App() {
     <br></br>
     <ul>
     {list.map((e,index)=>{ 
-            return <li key={index} className='curlist'>{e} {<button >Edit</button>} {<button className='Delbut' onClick={() => handleDelete(index)}>Delete</button>}</li>
+            return <li key={index} className='curlist'>{e} {<button > Edit</button>} {<button className='Delbut' onClick={() => handleDelete(index)}> Delete</button>}</li>
           
              })}
     
