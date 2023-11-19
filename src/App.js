@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -6,20 +6,15 @@ function App() {
   let [val, limi_changer]= useState('');
   let [list, SetList]= useState([]);
 
-  const inputRef = useRef("Ehtisham");
-
-  useEffect(()=>{
-    console.log(inputRef);
-  },[inputRef])
  
   const fun=(event)=>{
   limi_changer(event.target.value);
   }
-
   const submit_req= (e)=>{
     e.preventDefault();
     SetList((prevList) => [...prevList, val]);
     limi_changer('');
+    
      
      }
 
@@ -37,7 +32,7 @@ function App() {
   <div className='to'>
     <h1 className='to-do'>To-Do List</h1>
     <form onSubmit={submit_req}>
-    <input className='ink' type="text" placeholder=' Enter the task...' ref={inputRef} required='true' value={val}/>
+    <input className='ink' type="text" placeholder=' Enter the task...' onChange={fun}  required='true' value={val}/>
     <button className='button'>Add task</button>
     </form>
     <br></br>
